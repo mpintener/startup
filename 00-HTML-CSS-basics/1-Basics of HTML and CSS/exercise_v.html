@@ -20,20 +20,24 @@
     </video>
 
     <form>
-        First Name: <input type="text" required><br>
-        Last Name: <input type="text" required><br>
-        Email: <input type="email" required><br>
-        Birthday: <input type="date" required ><br>
-        Favourite Sport:
-        <select id="favouriteSport" required><br>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" required><br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name=lastname" required><br>
+        <label for="email">Email:</label>
+        <input type="email" required><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="bithday" required ><br>
+        <label for="favouritesport">Favourite Sport:</label>
+        <select name="favouriteSport" required><br>
             <option value="">Choose one...</option>
             <option value="tennis">Tennis</option>
             <option value="soccer">Soccer</option>
             <option value="basketball">BasketBall</option>
             <option value="baseball">Baseball</option>
         </select><br>
-        Small Bio:<br>
-        <textarea name="bio" rows="10" cols="30"></textarea><br>
+        <label for="smallbio">Small Bio:</label><br>
+        <textarea name="bio" rows="10" cols="30">Write a small bio...</textarea><br>
         <button type="submit">O.K.</button>
         <button type="reset">Clear</button>
 
