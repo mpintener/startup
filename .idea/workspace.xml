@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75f28ce8-fedc-46d2-9d66-b9136ed70317" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise1.html" afterPath="$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise_iv.html" afterPath="$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise_iv.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise_v.html" afterPath="$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise_v.html" />
     </list>
     <ignored path="startup.iws" />
@@ -26,8 +28,8 @@
       <file leaf-file-name="exercise_iv.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise_iv.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            <state relative-caret-position="85">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="4" selection-end-line="8" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -36,8 +38,18 @@
       <file leaf-file-name="exercise_v.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise_v.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+            <state relative-caret-position="391">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exercise1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,6 +76,8 @@
         <option value="$PROJECT_DIR$/00-HTML-CSS-basics/exercise_v.html" />
         <option value="$PROJECT_DIR$/00-HTML-CSS-basics/CSS/style.css" />
         <option value="$PROJECT_DIR$/00-HTML-CSS-basics/index.html" />
+        <option value="$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise_iv.html" />
+        <option value="$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise1.html" />
         <option value="$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise_v.html" />
       </list>
     </option>
@@ -237,12 +251,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1461009712698</updated>
-      <workItem from="1461009714117" duration="5024000" />
+      <workItem from="1461009714117" duration="6020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5024000" />
+    <option name="totallyTimeSpent" value="6020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -290,26 +304,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise1.html">
+    <entry file="file://$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise_iv.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state relative-caret-position="85">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="4" selection-end-line="8" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise_iv.html">
+    <entry file="file://$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/00-HTML-CSS-basics/1-Basics of HTML and CSS/exercise_v.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+        <state relative-caret-position="391">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding />
         </state>
       </provider>
