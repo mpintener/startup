@@ -1,0 +1,37 @@
+.container{
+    font-family: "Myriad Pro";
+    font-size: 20px;
+}
+h1{
+    font-family: "Arial Narrow";
+    color: darkred;
+    text-align: center
+}
+
+section {
+    text-align: center;
+}
+
+section.error{
+    color: red;
+}
+
+#words{
+    opacity: 0;
+    -webkit-transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+}
+
+
+#words.fadeIn{
+    opacity: 1;
+}
+
+ul{
+    float: right;
+}
+
+
+
