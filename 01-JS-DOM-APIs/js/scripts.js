@@ -18,10 +18,14 @@ var config = {
 };
 
 function loadText (config) {
+
     var xhr = new XMLHttpRequest();
     var responseSection = document.getElementById("section2");
+
     xhr.onreadystatechange = function() {
+
         if (xhr.readyState == 4 && xhr.status == 200) {
+
             responseSection.innerHTML = JSON.parse(xhr.responseText).value.joke;
             } else {
             responseSection.innerHTML = xhr.statusText;
@@ -32,38 +36,57 @@ function loadText (config) {
     xhr.send();
 }
 
-var config2 = {
-    url: 'https://api.github.com/search/repositories?q=JavaScript',
-    method: 'GET',
-};
 
-function showInfo(conf) {
-    var xhr = new XMLHttpRequest();
-    var search = document.getElementById('txtSearch').value;
-    console.log(search);
-    var result = document.getElementById('list');
+function showInfo() {
 
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState == 4 && xhr.status == 200) {
+    var promise = new Promise(function (resolve, reject) {
 
-            var arrayRepos = [];
-            arrayRepos = JSON.parse(xhr.responseText).items;
-
-            arrayRepos.forEach(
-                function(repo) {
-                    if((repo.full_name).includes(search)){
-                    var li = document.createElement("li");
-                    var text = document.createTextNode(repo.full_name);
-                    li.appendChild(text);
-                    result.appendChild(li);}
-            });
+        var config2 = {
+            url: 'https://api.github.com/search/repositories',
+            method: 'GET',
+            data: '?q='
         }
-    };
-    xhr.open(conf.method, conf.url, true);
-    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhr.send();
-}
 
+
+        var xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = function () {
+
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                var arrayRepos = [];
+                arrayRepos = JSON.parse(xhr.responseText).items;
+
+                if (arrayRepos !== undefined) {
+                    resolve(arrayRepos);
+                } else {
+                    reject('Something is wrong!');
+                }
+            }
+        }
+
+        var search = document.getElementById('txtSearch').value;
+
+        var url = config2.url + config2.data + search;
+
+        xhr.open(config2.method, url, true);
+        xhr.send();
+    });
+
+    promise.then(function (arrayRepos) {
+
+        var result = document.getElementById('list');
+
+        arrayRepos.forEach(
+            function (repo) {
+                var li = document.createElement("li");
+                var text = document.createTextNode(repo.full_name);
+                li.appendChild(text);
+                result.appendChild(li);
+            });
+    }, function (err) {
+        console.log(err);
+    });
+}
 
 function loadTable() {
 
