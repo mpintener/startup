@@ -1,0 +1,82 @@
+.container{
+    font-family: "Myriad Pro";
+    font-size: 20px;
+}
+h1{
+    font-family: "Arial Narrow";
+    color: darkred;
+    text-align: center
+}
+
+section {
+    text-align: center;
+}
+
+section.error{
+    color: red;
+}
+
+#words{
+    opacity: 0;
+    -webkit-transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+}
+
+
+#words.fadeIn{
+    opacity: 1;
+}
+
+ul{
+    float: right;
+}
+
+
+#tfheader{
+    background-color: #cca298;
+}
+#tfnewsearch{
+    float:right;
+    padding:20px;
+}
+.tftextinput{
+    margin: 0;
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    border:1px solid #ad3f27; border-right:0px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+}
+.tfbutton {
+    margin: 0;
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border: solid 1px #8e2612; border-right:0px;
+    background: #ad3f27;
+    background: -webkit-gradient(linear, left top, left bottom, from(#cc5845), to(#8e2612));
+    background: -moz-linear-gradient(top, #cc5845, #8e2612);
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+}
+.tfbutton:hover {
+    text-decoration: none;
+    background: #ad3f27;
+    background: -webkit-gradient(linear, left top, left bottom, from(#cc5845), to(#8e2612));
+    background: -moz-linear-gradient(top, #cc5845, #8e2612);
+}
+/* Fixes submit button height problem in Firefox */
+.tfbutton::-moz-focus-inner {
+    border: 0;
+}
+.tfclear{
+    clear:both;
+}
