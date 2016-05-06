@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="description" content="Basics of HTML and CSS">
+    <meta name="author" content="Martina Pintener">
+
+    <title>Random</title>
+
+</head>
+<body>
+    <img src="imgs/memeful.png">
+    <br>
+    <audio controls>
+        <source src="audio/ride.mp3" type="audio/mpeg" />
+        <source src="audio/ride.ogg" type="audio/ogg" />
+        Your browser does not support the audio element.
+    </audio>
+    <br>
+    <video controls autoplay loop>
+        <source src="video/YMKD7RQ_700wa_0.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <form>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" autofocus required><br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name=lastname" required><br>
+        <label for="email">Email:</label>
+        <input type="email" required><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="bithday" required ><br>
+        <label for="favouritesport">Favourite Sport:</label>
+        <select name="favouriteSport" required><br>
+            <option value="">Choose one...</option>
+            <option value="tennis">Tennis</option>
+            <option value="soccer">Soccer</option>
+            <option value="basketball">BasketBall</option>
+            <option value="baseball">Baseball</option>
+        </select><br>
+        <label for="smallbio">Small Bio:</label><br>
+        <textarea name="bio" rows="10" cols="30">Write a small bio...</textarea><br>
+        <button type="submit">O.K.</button>
+        <button type="reset">Clear</button>
+
+    </form>
+</body>
+</html>
