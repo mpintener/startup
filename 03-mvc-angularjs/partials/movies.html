@@ -1,0 +1,10 @@
+
+<button type="button" name="btnAdd" class="btn-default btn-xs" ng-click="addMovie(movie)">Add</button>
+  <ul>
+    <li ng-repeat="movie in movies">
+      <a href="">{{movie.title}}</a>
+      <button type="button" name="btnMore" class="btn-default btn-xs" ng-click="seeMovie(movie)">More..</button>
+      <button type="button" name="btnEdit" class="btn-default btn-xs" ng-click="editMovie(movie)">Edit</button>
+      <button type="button" name="btnDelete" class="btn-default btn-xs" ng-click="delete(movie)">Delete</button>
+    </li>
+  </ul>
