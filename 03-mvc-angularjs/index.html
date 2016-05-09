@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css"
+
+    <title></title>
+</head>
+  <body ng-app="myApp">
+
+    <h1 class="jumbotron">Movies</h1>
+
+
+    <div class="row">
+      <div class="">
+        <div class="well" ui-view></div>
+      </div>
+    </div>
+
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/a0-angular-storage/dist/angular-storage.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="services/movieService.js"></script>
+    <script src="controllers/moviesController.js"></script>
+    <script src="controllers/movieDetailsController.js"></script>
+    <script src="controllers/editMovieController.js"></script>
+    <script src="controllers/addMovieController.js"></script>
+
+</body>
+</html>
