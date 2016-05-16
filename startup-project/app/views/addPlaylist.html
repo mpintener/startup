@@ -1,0 +1,22 @@
+<div>
+  <h2>New Playlist</h2>
+
+  <form action="" ng-submit="createPlaylist()" ng-model="newPlaylist">
+    <label>Title</label>
+    <br>
+    <input class="txt" ng-model="newPlaylist.name" required placeholder="Add a title">
+    <br>
+    <h3>Add Tracks</h3>
+    <br>
+    <label>Search</label>
+    <input class="txt" ng-model="q" ng-change="search()" placeholder="search">
+    <ul>
+      <li ng-repeat="track in searchResults" ng-click="add(track)">{{track.name}} - {{track.artists[0].name}} - {{track.album.name}}</li>
+    </ul>
+    <button class="" type="submit">I'm done</button>
+  </form>
+
+</div>
+
+
+

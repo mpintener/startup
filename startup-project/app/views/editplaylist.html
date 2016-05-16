@@ -1,0 +1,48 @@
+<form ng-submit="editPlaylist()" ng-model="savedPlaylist">
+
+<h3>Add Tracks to a Playlist</h3>
+<br>
+<label>Search</label>
+<input class="txt" ng-model="q" ng-change="search()" placeholder="search">
+<ul>
+  <li ng-repeat="track in searchResults" ng-click="addTracks(track)">{{track.name}} - {{track.artists[0].name}} - {{track.album.name}}</li>
+</ul>
+<button class="" type="submit">Save</button>
+
+<div class="expand">
+  <div class="row">
+    <div class="col-sm-4">
+      <img class="update-content" ng-src="{{savedPlaylist.images[0].url}}">
+    </div>
+    <div class="col-sm-8">
+      <h2 class="animated bounceInRight">{{savedPlaylist.name}}</h2>
+      <h4 class="playlist-data">{{savedPlaylist.tracks.length}} Songs</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 table-responsive">
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>SONG</th>
+          <th>ARTIST</th>
+          <th>ALBUM</th>
+          <th><span class="glyphicon glyphicon-time"></span></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="x in savedPlaylist.tracks">
+          <td>{{$index + 1}}</td>
+          <td>{{x.name}}</td>
+          <td>{{x.artists[0].name}}</td>
+          <td>{{x.album.name}}</td>
+          <td>{{x.duration_ms * 0.0000166667 | number:2}}'</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</form>

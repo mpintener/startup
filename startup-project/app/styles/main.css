@@ -1,0 +1,123 @@
+body{
+    padding: 31.25px 0px 62.5px;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: rgb(31, 28, 28);
+    color: #f7f6f6;
+}
+
+.frame{
+  text-align: center;
+  background-color: #2a2525;
+  color: #f7f6f6;
+  margin-top: 80px;
+  padding: 15px;
+}
+
+.wrapper{
+  border-radius: 8px;
+  margin: 60px;
+  padding: 60px;
+  background-color: #211819;
+}
+
+.button{
+  background-color: #22d05f;
+  color: #f7f6f6;
+  font-weight: bold;
+  border-color: #22d05f;
+}
+
+
+.custom-background{
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.expand{
+  background-color: rgba(255, 255, 255, 0.8);
+  vertical-align: center;
+}
+.jumbotron {
+  margin-top: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  vertical-align: middle;
+}
+
+.animated bounce{
+  animation-iteration-count: infinite;
+}
+
+
+.txt{
+  border: 1px solid #848484;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  outline:0;
+  height:25px;
+  width: 150px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.update-content{
+  position: relative;
+  width: 100%;
+  height:auto;
+}
+/*========PLAYLISTS========*/
+a{
+  text-align: right;
+  font-family: 'Fjalla One', sans-serif;
+  cursor: pointer;
+  color: #D8534D;
+  text-decoration: none;
+  position: relative;
+  float: right;
+}
+a:hover {
+  text-decoration: underline;
+  color: #5FC0B1;
+}
+
+.edit-zone{
+  align-content: right;
+}
+
+
+th,td,tr{
+  text-align: left;
+}
+.table-hover tbody tr:hover td {
+  background: rgb(43, 37, 37);
+}
+
+.playlist-data{
+  margin: 0;
+}
+
+/*=============PROFILE================*/
+.img-circle{
+  border: 5px solid #fff;
+  box-shadow: 0 0 5px 2px #ccc;
+  width: auto;
+  height: auto;
+}
+.username{
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.fix{
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+li{
+  list-style: none;
+}
+.header{
+  text-transform: uppercase;
+  font-size: 43px;
+}
