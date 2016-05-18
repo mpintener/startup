@@ -1,0 +1,146 @@
+body{
+    padding: 31.25px 0px 62.5px;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: rgb(31, 28, 28);
+    color: #f7f6f6;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.frame{
+  text-align: center;
+  background-color: #2a2525;
+  color: #f7f6f6;
+  margin-top: 80px;
+  padding: 15px;
+}
+
+.wrapper{
+  border-radius: 8px;
+  margin: 60px;
+  padding: 60px;
+  background-color: #211819;
+}
+
+.name{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+.custom-background{
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.expand{
+  background-color: rgba(255, 255, 255, 0.8);
+  vertical-align: center;
+}
+.jumbotron {
+  margin-top: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  vertical-align: middle;
+}
+
+
+
+
+/*========PLAYLISTS========*/
+a{
+  text-align: right;
+  font-family: 'Fjalla One', sans-serif;
+  cursor: pointer;
+  color: #D8534D;
+  text-decoration: none;
+  position: relative;
+  float: right;
+}
+a:hover {
+  text-decoration: underline;
+  color: #5FC0B1;
+}
+
+.to-the-right{
+  align-content: right;
+}
+.to-the-left{
+  align-content: left;
+}
+
+th,td,tr{
+  text-align: left;
+}
+.table-hover tbody tr:hover td {
+  background: rgb(43, 37, 37);
+}
+
+.playlist-data{
+  margin: 0;
+}
+
+/*=============PROFILE================*/
+.img{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.main-font{
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.fix{
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.fix2{
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.fix-table{
+  margin-right: 120px;
+
+}
+
+.header{
+  text-transform: uppercase;
+  font-size: 43px;
+}
+
+.new{
+  font-size: 15px;
+}
+.align{
+  text-align: center;
+  align-content: center;
+}
+
+.p-name,.p-artist,.p-album{
+  background-color: #2a2525;
+}
+
+.tbox{
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border:none !important;
+}
+
+.btn-circle{
+  border-radius: 50px;
+  outline: 0;
+  border-color: transparent;
+  background-color: #FFCC5C;
+}
+
+.search{
+  vertical-align: middle;
+  margin: 0;
+}
+
+.several-titles{
+  font-family: 'Oswald', sans-serif;
+}
+label{
+  font-size: 15px;
+}

@@ -1,0 +1,37 @@
+<div class="wrapper">
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-3">
+      <h2 class="animated bounceInRight">{{savedPlaylist.name}}</h2>
+      <h4 class="playlist-data">{{savedPlaylist.tracks.length}} Songs</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-3">
+      <img class="update-content" ng-src="{{savedPlaylist.images[0].url}}">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 table-responsive">
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>SONG</th>
+          <th>ARTIST</th>
+          <th>ALBUM</th>
+          <th><span class="glyphicon glyphicon-time"></span></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="x in savedPlaylist.tracks">
+          <td>{{$index + 1}}</td>
+          <td>{{x.image}}{{x.name}}</td>
+          <td>{{x.artists[0].name}}</td>
+          <td>{{x.album.name}}</td>
+          <td>{{x.duration_ms * 0.0000166667 | number:2}}'</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

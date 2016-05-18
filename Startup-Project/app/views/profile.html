@@ -1,0 +1,47 @@
+<div class="wrapper">
+
+<hr>
+  <div class="row">
+    <div class="col-sm-4">
+      <img class="img-responsive img-thumbnail" ng-src="{{User.images[0].url}}">
+    </div>
+    <div class="col-sm-8 align">
+      <h1 class="several-titles">{{User.display_name}}</h1>
+      <h2 class="several-titles">{{User.followers.total}} Followers</h2>
+    </div>
+    <div class="col-sm-12 align">
+      <a href="" class="new several-titles" ng-click="addPlaylist()">NEW PLAYLIST</a>
+    </div>
+  </div>
+<hr>
+
+  <div class="row">
+    <div class="col-sm-12 table-responsive">
+      <h3>Your playlists!</h3>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>NAME</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="playlist in playlists">
+          <td>{{$index + 1}}</td>
+          <td>
+            <img class="fix" src="{{playlist.images[0].url}}" alt="../images/ejuv7pGv.png" />
+             {{playlist.name}}
+          </td>
+          <td>
+            <a href="" class="fa fa-pencil" aria-hidden="true" ng-click="selectPlaylist(playlist)"></a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+</div>

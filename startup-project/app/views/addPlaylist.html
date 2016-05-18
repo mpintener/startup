@@ -1,0 +1,22 @@
+<div class="wrapper several-titles ">
+  <div class="row">
+    <div class="col-lg-12">
+      <h2 class=" several-titles">New Playlist</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <form ng-submit="createPlaylist()" ng-model="newPlaylist">
+        <input class="tbox input-lg" ng-model="newPlaylist.name" required placeholder="Add a title">
+        <br>
+    </div>
+    <div class="col-lg-8">
+      <h3 class="several-titles">Add Tracks</h3>
+      <input class="tbox input-lg" ng-model="q" ng-change="search()" placeholder="Search for tracks"><button type="submit" class="btn-circle btn-lg animated pulse infinite" ng-click="createPlaylist()" type="submit"><i class="fa fa-check fa-2" aria-hidden="true"></i></button>
+      <div ng-repeat="track in searchResults">
+        <p class="p-artist" ng-click="add(track)">{{track.name}} - {{track.artists[0].name}} - {{track.album.name}}</p>
+      </div>
+    </div>
+  </div>
+ </form>
+</div>
