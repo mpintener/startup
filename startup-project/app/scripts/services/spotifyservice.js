@@ -30,7 +30,7 @@ angular.module('startupProjectApp')
       this.playlist.tracks = [];
 
     //User
-    this.user = {};
+      this.user = {};
 
 
 
@@ -84,28 +84,6 @@ angular.module('startupProjectApp')
         return this.callSpotifyAPI('/users/' + user_id + '/playlists/' + playlist_id + 'tracks', 'POST', null, null, this.getAuthHeaders(true));
       };
 
-
-
-/*
-    //clientId
-    this.setClientId = function (clientId){
-      this.config.clientId = clientId;
-      return this.config.clientId;
-    };
-
-    this.getClientId = function () {
-      return this.config.clientId;
-    };
-
-    //redirectUri
-    this.setRedirectUri = function (redirectUri) {
-      this.config.redirectUri = redirectUri;
-      return this.config.redirectUri;
-    };
-
-    this.getRedirectUri = function () {
-      return this.redirectUri;
-    };--*/
 
     //scope
     this.setScope  = function (scope) {
@@ -185,12 +163,6 @@ angular.module('startupProjectApp')
       }, null, this.getAuthHeaders(true));
       };
 
-  /*    this.setPlaylist = function (name, description) {
-        this.playlist.name = name;
-        this.playlist.description = description;
-        this.storePlaylist(this.playlist);
-    };
-*/
       this.createPlaylist = function (user_id, opt) {
         return this.callSpotifyAPI('/users/' + user_id + '/playlists','POST', null, opt, this.getAuthHeaders(true));
       };
@@ -216,17 +188,12 @@ angular.module('startupProjectApp')
     };
 
 
-
-      /*this.addSong = function (tracksArray, track) {
-        tracksArray.push(track);
-        store.set
-      };*/
-
       //----Search----//
       this.search = function (query, type) {
         var options = {};
         options.q = query;
         options.type = type;
+        options.limit = 5;
         return this.callSpotifyAPI('/search', 'GET', options);
       };
 
@@ -266,10 +233,6 @@ angular.module('startupProjectApp')
         loadUserPlaylists: function () {
           return that.getUserPlaylists();
         },
-        //PLAYLIST DETAILS
-        storePlaylistforDetails: function (playlist) {
-          return that.storePlaylistforDetails(playlist);
-        },
         getPlaylistforDetails: function () {
           return that.getPlaylistforDetails();
         },
@@ -277,12 +240,6 @@ angular.module('startupProjectApp')
         //
         setAuthToken: function (token) {
           return that.setAuthToken(token);
-        },
-        getAuthToken: function () {
-          return that.getAuthToken();
-        },
-        newTracks: function (user_id, playlist_id) {
-          return that.newTracks(user_id, playlist_id)
         },
         getUserPlaylists: function (conf) {
           return that.getUserPlaylists(conf);

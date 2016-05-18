@@ -5,6 +5,7 @@ body{
     margin-bottom: 0px;
     background-color: rgb(31, 28, 28);
     color: #f7f6f6;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .frame{
@@ -22,11 +23,8 @@ body{
   background-color: #211819;
 }
 
-.button{
-  background-color: #22d05f;
-  color: #f7f6f6;
-  font-weight: bold;
-  border-color: #22d05f;
+.name{
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 
@@ -44,28 +42,9 @@ body{
   vertical-align: middle;
 }
 
-.animated bounce{
-  animation-iteration-count: infinite;
-}
 
 
-.txt{
-  border: 1px solid #848484;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  outline:0;
-  height:25px;
-  width: 150px;
-  padding-left:10px;
-  padding-right:10px;
-}
 
-.update-content{
-  position: relative;
-  width: 100%;
-  height:auto;
-}
 /*========PLAYLISTS========*/
 a{
   text-align: right;
@@ -81,10 +60,12 @@ a:hover {
   color: #5FC0B1;
 }
 
-.edit-zone{
+.to-the-right{
   align-content: right;
 }
-
+.to-the-left{
+  align-content: left;
+}
 
 th,td,tr{
   text-align: left;
@@ -98,13 +79,12 @@ th,td,tr{
 }
 
 /*=============PROFILE================*/
-.img-circle{
-  border: 5px solid #fff;
-  box-shadow: 0 0 5px 2px #ccc;
-  width: auto;
+.img{
+  width: 100%;
   height: auto;
+  position: relative;
 }
-.username{
+.main-font{
   font-family: 'Fjalla One', sans-serif;
 }
 
@@ -113,11 +93,54 @@ th,td,tr{
   width: 50px;
   height: 50px;
 }
-
-li{
-  list-style: none;
+.fix2{
+  position: relative;
+  width: 200px;
+  height: 200px;
 }
+
+.fix-table{
+  margin-right: 120px;
+
+}
+
 .header{
   text-transform: uppercase;
   font-size: 43px;
+}
+
+.new{
+  font-size: 15px;
+}
+.align{
+  text-align: center;
+  align-content: center;
+}
+
+.p-name,.p-artist,.p-album{
+  background-color: #2a2525;
+}
+
+.tbox{
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border:none !important;
+}
+
+.btn-circle{
+  border-radius: 50px;
+  outline: 0;
+  border-color: transparent;
+  background-color: #FFCC5C;
+}
+
+.search{
+  vertical-align: middle;
+  margin: 0;
+}
+
+.several-titles{
+  font-family: 'Oswald', sans-serif;
+}
+label{
+  font-size: 15px;
 }

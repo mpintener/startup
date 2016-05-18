@@ -17,15 +17,6 @@ angular.module('startupProjectApp')
 
     /*Show current playlist tracks*/
     $scope.showTracks = function () {
-      /*console.log($scope.savedPlaylist);
-      SpotifyService.getTracksFromPlaylist($scope.savedPlaylist.id, $scope.currentUser.id).then(
-        function (data) {
-          data.items.forEach(function (s) {
-            $scope.savedPlaylist.tracks.push(s.track);
-          });
-        }, function (error) {
-          console.log('error');
-        });*/
         SpotifyService.getTracksFromPlaylist($scope.savedPlaylist.id, $scope.currentUser.id)
         .then(function(data){
           data.items.forEach(function(s){
